@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Delight - Fresh Coffee & Delicious Meals</title>
+    <meta name="description" content="Fresh coffee, delicious meals, and sweet treats delivered to your door">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">🍴</div>
+                    <div class="logo-text">
+                        <h1>Café Delight</h1>
+                        <p>Fresh • Fast • Delicious</p>
+                    </div>
+                </div>
+                <nav class="nav">
+                    <a href="#menu">Menu</a>
+                    <a href="#reservation">Reservation</a>
+                    <a href="#contact">Contact</a>
+                    <button class="sign-in-btn">Sign In</button>
+                    <button class="cart-btn" id="cartBtn">
+                        <img src="https://img.icons8.com/ios-filled/50/ffffff/shopping-cart--v1.png" alt="Cart" class="cart-icon">
+                        <span class="cart-badge" id="cartBadge">0</span>
+                    </button>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-icon">🍴</div>
+                <h1>Café <span class="highlight">Delight</span></h1>
+                <p>Fresh coffee, delicious meals, and sweet treats delivered to your door</p>
+                <button class="hero-btn">Order Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <main class="main" id="menu">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Menu</h2>
+                <p>Discover our carefully crafted selection of dishes made with the finest ingredients</p>
+            </div>
+
+            <!-- Menu Tabs -->
+            <div class="menu-tabs">
+                <button class="tab-btn active" data-tab="breakfast">
+                    <img src="https://img.icons8.com/color/48/000000/breakfast.png" alt="Breakfast" class="tab-icon">
+                    Breakfast
+                </button>
+                <button class="tab-btn" data-tab="lunch">
+                    <img src="https://img.icons8.com/color/48/000000/salad.png" alt="Lunch" class="tab-icon">
+                    Lunch
+                </button>
+                <button class="tab-btn" data-tab="dinner">
+                    <img src="https://img.icons8.com/color/48/000000/dinner.png" alt="Dinner" class="tab-icon">
+                    Dinner
+                </button>
+            </div>
+
+<!-- Menu Content -->
+<div class="menu-content">
+<!-- Breakfast -->
+<div class="tab-content active" id="breakfast">
+<div class="menu-grid">
+    <div class="menu-item" data-id="1" data-name="Classic Pancakes" data-price="8.50">
+        <img src="https://img.freepik.com/premium-photo/pancakes-with-berries-maple-syrup_121837-13134.jpg" alt="Classic Pancakes">
+        <div class="menu-item-content">
+            <h3>Classic Pancakes</h3>
+            <p>Fluffy pancakes with maple syrup and fresh berries</p>
+            <div class="menu-item-footer">
+                <span class="price">₹8.50</span>
+                <button class="add-to-cart-btn">
+                    <img src="https://img.icons8.com/ios-filled/50/ffffff/plus-math.png" alt="Add" class="add-icon">
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="menu-item" data-id="2" data-name="Avocado Toast" data-price="12.75">
+        <img src="https://img.freepik.com/premium-photo/poached-egg-dish-plate-with-tomatoes-soft-egg-opening-sourdough-smashed-avocado-toast_935552-2464.jpg" alt="Avocado Toast">
+        <div class="menu-item-content">
+            <h3>Avocado Toast</h3>
+            <p>Sourdough toast with smashed avocado and poached egg</p>
+            <div class="menu-item-footer">
+                <span class="price">₹12.75</span>
+                <button class="add-to-cart-btn">
+                    <img src="https://img.icons8.com/ios-filled/50/ffffff/plus-math.png" alt="Add" class="add-icon">
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="menu-item" data-id="3" data-name="French Croissant" data-price="6.25">
+        <img src="https://thumbs.dreamstime.com/b/cozy-morning-cafe-scene-featuring-buttery-croissant-fresh-strawberries-cup-coffee-perfect-delightful-breakfast-350068430.jpg" alt="French Croissant">
+        <div class="menu-item-content">
+            <h3>French Croissant</h3>
+            <p>Buttery croissant with jam and fresh coffee</p>
+            <div class="menu-item-footer">
+                <span class="price">₹6.25</span>
+                <button class="add-to-cart-btn">
+                    <img src="https://img.icons8.com/ios-filled/50/ffffff/plus-math.png" alt="Add" class="add-icon">
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+        <!-- Lunch -->
+        <div class="tab-content" id="lunch">
+            <div class="menu-grid">
+                <div class="menu-item" data-id="4" data-name="Artisan Breakfast Bowl" data-price="12.50">
+                    <img src="https://i0.wp.com/www.spicesinmydna.com/wp-content/uploads/2018/04/Sesame-Tofu-Soft-Boiled-Egg-Quinoa-Bowls-3.jpg?w=1220&ssl=1" alt="Artisan Breakfast Bowl">
+                    <div class="menu-item-content">
+                        <h3>Artisan Breakfast Bowl</h3>
+                        <p>Fresh avocado, poached eggs, quinoa, and seasonal vegetables</p>
+                        <div class="menu-item-footer">
+                            <span class="price">₹12.50</span>
+                            <button class="add-to-cart-btn">
+                                <img src="https://img.icons8.com/ios-filled/50/ffffff/plus-math.png" alt="Add" class="add-icon">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item" data-id="5" data-name="Gourmet Sandwich" data-price="11.25">
+                    <img src="https://thumbs.dreamstime.com/b/grilled-chicken-fresh-vegetable-salad-lettuce-arugula-basil-tomato-cherry-ai-generated-art-grilled-chicken-fresh-270574254.jpg" alt="Gourmet Sandwich">
+                    <div class="menu-item-content">
+                        <h3>Gourmet Sandwich</h3>
+                        <p>Grilled chicken, fresh basil, tomatoes, and artisan bread</p>
+                        <div class="menu-item-footer">
+                            <span class="price">₹11.25</span>
+                            <button class="add-to-cart-btn">
+                                <img src="https://img.icons8.com/ios-filled/50/ffffff/plus-math.png" alt="Add" class="add-icon">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item" data-id="6" data-name="Mediterranean Salad" data-price="10.75">
+                    <img src="https://img.freepik.com/premium-photo/blueberry-salad-with-mixed-greens-feta-cheese_1170794-202024.jpg" alt="Mediterranean Salad">
+                    <div class="menu-item-content">
+                        <h3>Mediterranean Salad</h3>
+                        <p>Mixed greens, feta cheese, olives, and balsamic dressing</p>
+                        <div class="menu-item-footer">
+                            <span class="price">₹10.75</span>
+                            <button class="add-to-cart-btn">
+                                <img src="https://img.icons8.com/ios-filled/50/ffffff/plus-math.png" alt="Add" class="add-icon">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Dinner -->
+        <div class="tab-content" id="dinner">
+            <div class="menu-grid">
+                <div class="menu-item" data-id="7" data-name="Grilled Salmon" data-price="24.50">
+                    <img src="https://www.healthyeatingguru.com/wp-content/uploads/2023/11/Grilled-lemon-herb-salmon.jpg" alt="Grilled Salmon">
+                    <div class="menu-item-content">
+                        <h3>Grilled Salmon</h3>
+                        <p>Fresh Atlantic salmon with herbs and lemon butter</p>
+                        <div class="menu-item-footer">
+                            <span class="price">₹24.50</span>
+                            <button class="add-to-cart-btn">
+                                <img src="https://img.icons8.com/ios-filled/50/ffffff/plus-math.png" alt="Add" class="add-icon">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item" data-id="8" data-name="Ribeye Steak" data-price="32.75">
+                    <img src="https://tse2.mm.bing.net/th/id/OIP.mGA9in2IpUOGKlDu_YETogHaE7?pid=Api&P=0&h=180" alt="Ribeye Steak">
+                    <div class="menu-item-content">
+                        <h3>Ribeye Steak</h3>
+                        <p>Premium ribeye with roasted vegetables and garlic mash</p>
+                        <div class="menu-item-footer">
+                            <span class="price">₹32.75</span>
+                            <button class="add-to-cart-btn">
+                                <img src="https://img.icons8.com/ios-filled/50/ffffff/plus-math.png" alt="Add" class="add-icon">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item" data-id="9" data-name="Pasta Primavera" data-price="18.95">
+                    <img src="https://easypeasyrecipe.com/wp-content/uploads/2024/07/recipe-one-pot-pasta-primavera-fresh-pasta-with-seasonal-vegetables-in-a-light-sauce.jpg" alt="Pasta Primavera">
+                    <div class="menu-item-content">
+                        <h3>Pasta Primavera</h3>
+                        <p>Fresh pasta with seasonal vegetables and parmesan</p>
+                        <div class="menu-item-footer">
+                            <span class="price">₹18.95</span>
+                            <button class="add-to-cart-btn">
+                                <img src="https://img.icons8.com/ios-filled/50/ffffff/plus-math.png" alt="Add" class="add-icon">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Reservation and Contact Section -->
+    <div class="forms-section">
+        <!-- Reservation Form -->
+        <div class="form-card" id="reservation">
+            <div class="form-header">
+                <h3>📅 Make a Reservation</h3>
+            </div>
+            <form class="reservation-form" id="reservationForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required placeholder="Enter your email">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+                    </div>
+                    <div class="form-group">
+                        <label for="guests">👥 Number of Guests *</label>
+                        <input type="number" id="guests" name="guests" min="1" max="20" required placeholder="How many guests?">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="date">📅 Preferred Date *</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="time">🕐 Preferred Time *</label>
+                        <input type="time" id="time" name="time" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="message">Special Requests</label>
+                    <textarea id="message" name="message" placeholder="Any special dietary requirements or requests?"></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Submit Reservation Request</button>
+            </form>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="form-card" id="contact">
+            <div class="form-header">
+                <h3>📞 Contact & Location</h3>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-icon">📍</div>
+                    <div>
+                        <h4>Address</h4>
+                        <p>123 Café Street, Guntur District<br>Andhra Pradesh, NY 10001</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">📞</div>
+                    <div>
+                        <h4>Phone</h4>
+                        <p>+917702112145</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">✉️</div>
+                    <div>
+                        <h4>Email</h4>
+                        <p>srinuseshu709@gmail.com</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">🕐</div>
+                    <div>
+                        <h4>Hours</h4>
+                        <div class="hours">
+                            <p>Monday - Friday: 7:00 AM - 9:00 PM</p>
+                            <p>Saturday: 8:00 AM - 10:00 PM</p>
+                            <p>Sunday: 8:00 AM - 8:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="social-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="https://github.com/srinu449" class="social-link">
+                        <img src="https://www.pngmart.com/files/23/Github-Logo-PNG-Pic-1.png" alt="GitHub">
+                    </a>
+                    <a href="#" class="social-link">
+                        <img src="https://tse3.mm.bing.net/th/id/OIP.uPNvAtd17XlJqxZvgckhAgHaHa?pid=Api&P=0&h=180" alt="LinkedIn">
+                    </a>
+                    <a href="https://www.instagram.com/vasu_chowdary_nelluri?igsh=dGd5Z3U5NWZna281" class="social-link">
+                        <img src="https://w7.pngwing.com/pngs/477/609/png-transparent-logo-computer-icons-instagram-logo-instagram-logo-miscellaneous-text-trademark.png" alt="Instagram">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+<div class="container">
+    <div class="footer-content">
+        <div class="footer-logo">
+            <div class="footer-icon">🍴</div>
+            <h3>Café Delight</h3>
+        </div>
+        <p>Bringing you the finest coffee and food experience</p>
+        <p>&copy; 2025 Café Delight. All rights reserved.</p>
+    </div>
+</div>
+</footer>
+
+<!-- Shopping Cart Modal -->
+<div class="modal" id="cartModal">
+<div class="modal-content">
+    <div class="modal-header">
+        <h3>Your Order</h3>
+        <button class="close-btn" id="closeCart">&times;</button>
+    </div>
+    <div class="modal-body">
+        <div id="cartItems"></div>
+        <div class="cart-total">
+            <div class="total-row">
+                <span>Total: ₹</span>
+                <span id="cartTotal">0.00</span>
+            </div>
+            <button class="place-order-btn" id="placeOrderBtn">Place Order</button>
+        </div>
+    </div>
+</div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
